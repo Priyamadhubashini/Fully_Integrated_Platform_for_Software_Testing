@@ -2,29 +2,44 @@ import unittest
 from selenium import webdriver
 
 class GoogleTest(unittest.TestCase):
+    
     def setUp(self):
-        # Initialize the Chrome browser before starting each test
+        """
+        Setup: This method runs before every individual test case.
+        It initializes the Chrome browser instance.
+        """
         self.driver = webdriver.Chrome()
 
-    # Test Case 1: Checking if 'Google' is in the title
-    def test_search(self):
+    def Test_01(self):
+        """
+        Test Case ID: MAP-1
+        Name: Test_01
+        Description: Checks if the word 'Google' is present in the website title.
+        """
         driver = self.driver
         driver.get("http://www.google.com")
-        # Assert that 'Google' word is in the page title
+        # Validate that 'Google' is part of the page title
         self.assertIn("Google", driver.title)
 
-    # Test Case 2: Verifying the exact title of the page
-    def test_page_title(self):
+    def Verify_Page_Title(self):
+        """
+        Test Case ID: MAP-2
+        Name: Verify_Page_Title
+        Description: Verifies that the page title is exactly 'Google'.
+        """
         driver = self.driver
         driver.get("http://www.google.com")
-        print("Verifying the exact page title...")
-        # Assert that the title matches 'Google' exactly
+        print("Executing: Verify_Page_Title Automation logic...")
+        # Validate that the title matches 'Google' exactly
         self.assertEqual(driver.title, "Google")
 
     def tearDown(self):
-        # Close the browser after the test completes to free resources
+        """
+        Teardown: This method runs after every test case.
+        It closes the browser to free up system resources.
+        """
         self.driver.quit()
 
 if __name__ == "__main__":
-    # Start the test execution suite
+    # Standard entry point to run the unittest suite
     unittest.main()
