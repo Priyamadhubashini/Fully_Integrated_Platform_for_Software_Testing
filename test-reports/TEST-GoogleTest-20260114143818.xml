@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GoogleTest-20260114143818" tests="2" file=".py" time="9.027" timestamp="2026-01-14T14:38:27" failures="2" errors="0" skipped="0">
+	<testcase classname="GoogleTest" name="test_test_Test_01" time="4.558" timestamp="2026-01-14T14:38:22" file="google_test.py" line="25">
+		<failure type="AssertionError" message="'Google' not found in 'Privacy error'"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Priya\.jenkins\workspace\TestLink_Automation_Project\google_test.py", line 27, in test_test_Test_01
+    self.assertIn("Google", self.driver.title)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Google' not found in 'Privacy error'
+]]></failure>
+	</testcase>
+	<testcase classname="GoogleTest" name="test_test_Verify_Page_Title" time="4.469" timestamp="2026-01-14T14:38:27" file="google_test.py" line="29">
+		<failure type="AssertionError" message="'Privacy error' != 'Google'&#10;- Privacy error&#10;+ Google&#10;"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Priya\.jenkins\workspace\TestLink_Automation_Project\google_test.py", line 31, in test_test_Verify_Page_Title
+    self.assertEqual(self.driver.title, "Google")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Privacy error' != 'Google'
+- Privacy error
++ Google
+
+]]></failure>
+	</testcase>
+</testsuite>

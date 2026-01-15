@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GoogleTest-20260114144130" tests="2" file=".py" time="11.385" timestamp="2026-01-14T14:41:42" failures="0" errors="0" skipped="0">
+	<testcase classname="GoogleTest" name="test_test_Test_01" time="5.525" timestamp="2026-01-14T14:41:36" file="google_test.py" line="33">
+		<!--Verify that 'Google' is part of the page title-->
+	</testcase>
+	<testcase classname="GoogleTest" name="test_test_Verify_Page_Title" time="5.860" timestamp="2026-01-14T14:41:42" file="google_test.py" line="40">
+		<!--Verify that the page title is exactly 'Google'-->
+	</testcase>
+</testsuite>

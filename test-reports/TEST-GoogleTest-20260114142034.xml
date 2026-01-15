@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GoogleTest-20260114142034" tests="2" file=".py" time="0.275" timestamp="2026-01-14T14:20:34" failures="0" errors="2" skipped="0">
+	<testcase classname="GoogleTest" name="test_Test_01" time="0.209" timestamp="2026-01-14T14:20:34" file="google_test.py" line="12">
+		<!--Test to verify if 'Google' is in the page title-->
+		<error type="NoSuchDriverException" message="Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location&#10;"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 67, in _binary_paths
+    output = SeleniumManager().binary_paths(self._to_args())
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\selenium_manager.py", line 54, in binary_paths
+    return self._run(args)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\selenium_manager.py", line 128, in _run
+    raise WebDriverException(
+        f"Unsuccessful command executed: {command}; code: {completed_proc.returncode}\n{result}\n{stderr}"
+    )
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --language-binding python --output json; code: 65
+{'code': 65, 'message': 'error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS)', 'driver_path': '', 'browser_path': ''}
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Priya\.jenkins\workspace\TestLink_Automation_Project\google_test.py", line 9, in setUp
+    self.driver = webdriver.Edge()
+                  ~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\edge\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.EDGE["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    if finder.get_browser_path():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+]]></error>
+	</testcase>
+	<testcase classname="GoogleTest" name="test_Verify_Page_Title" time="0.066" timestamp="2026-01-14T14:20:34" file="google_test.py" line="18">
+		<!--Test to verify if the page title exactly matches 'Google'-->
+		<error type="NoSuchDriverException" message="Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location&#10;"><![CDATA[Traceback (most recent call last):
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 67, in _binary_paths
+    output = SeleniumManager().binary_paths(self._to_args())
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\selenium_manager.py", line 54, in binary_paths
+    return self._run(args)
+           ~~~~~~~~~^^^^^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\selenium_manager.py", line 128, in _run
+    raise WebDriverException(
+        f"Unsuccessful command executed: {command}; code: {completed_proc.returncode}\n{result}\n{stderr}"
+    )
+selenium.common.exceptions.WebDriverException: Message: Unsuccessful command executed: C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser MicrosoftEdge --language-binding python --output json; code: 65
+{'code': 65, 'message': 'error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS)', 'driver_path': '', 'browser_path': ''}
+
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Priya\.jenkins\workspace\TestLink_Automation_Project\google_test.py", line 9, in setUp
+    self.driver = webdriver.Edge()
+                  ~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\edge\webdriver.py", line 47, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        browser_name=DesiredCapabilities.EDGE["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive=keep_alive,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\chromium\webdriver.py", line 53, in __init__
+    if finder.get_browser_path():
+       ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 47, in get_browser_path
+    return self._binary_paths()["browser_path"]
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Priya\AppData\Roaming\Python\Python313\site-packages\selenium\webdriver\common\driver_finder.py", line 78, in _binary_paths
+    raise NoSuchDriverException(msg) from err
+selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for MicrosoftEdge; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+]]></error>
+	</testcase>
+</testsuite>
