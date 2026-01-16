@@ -1,0 +1,9 @@
+Jira Site URL: https://madhuwickramarthna123.atlassian.net/
+
+Integrated Project Name: Software Project
+
+Project Key: SP
+
+Status: Successfully verified automated bug creation from Jenkins.
+
+Integration Method: Used Jira REST API via Windows Batch Command (cURL).

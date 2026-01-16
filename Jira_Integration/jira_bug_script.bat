@@ -1,0 +1,2 @@
+@echo off
+curl -u madhuwickramarthna123@gmail.com:YOUR_API_TOKEN_HERE -X POST --data "{\"fields\": {\"project\": {\"key\": \"SP\"}, \"summary\": \"Jenkins Build Failed\", \"description\": \"Build failed in Jenkins. Please check console output.\", \"issuetype\": {\"name\": \"Bug\"}}}" -H "Content-Type: application/json" https://madhuwickramarthna123.atlassian.net/rest/api/2/issue/

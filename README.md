@@ -23,3 +23,5 @@ The framework follows the industry-standard architecture:
 - [ ] Selenium & Python Scripting
 - [ ] Jenkins & TestLink Integration
 - [ ] JMeter & Performance Tuning
+
+* [COMPLETED] Jira Integration - Automated bug reporting for build failures in Project SP.
