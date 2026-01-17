@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.3 on win32)" generated="2026-01-18T01:08:25.324380" rpa="false" schemaversion="5">
+<suite id="s1" name="First Test" source="C:\Users\Priya\.jenkins\workspace\TestLink_Automation_Project\Automation_Tests\first_test.robot">
+<test id="s1-t1" name="Open Google And Search" line="5">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-01-18T01:08:25.967116" level="INFO">${options} = &lt;selenium.webdriver.edge.options.Options object at 0x000001C8648DAE40&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].EdgeOptions()</arg>
+<arg>sys, selenium.webdriver</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-01-18T01:08:25.966070" elapsed="0.001086"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_argument</arg>
+<arg>--ignore-certificate-errors</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2026-01-18T01:08:25.967871" elapsed="0.000178"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-18T01:08:25.968358" level="INFO">Opening browser 'edge' to base url 'https://www.google.com'.</msg>
+<msg time="2026-01-18T01:08:26.247193" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS)</msg>
+<arg>https://www.google.com</arg>
+<arg>edge</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-18T01:08:25.968167" elapsed="4.139511"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-18T01:08:30.108002" elapsed="0.067883"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-18T01:08:30.176046" elapsed="0.158238"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-18T01:08:30.334632" level="INFO">Typing text 'Robot Framework Jira Integration' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>Robot Framework Jira Integration</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-18T01:08:30.334446" elapsed="0.116688"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-01-18T01:08:30.451975" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2026-01-18T01:08:30.747680" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-01-18T01:08:30.747955" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-01-18T01:08:30.451437" elapsed="0.308743"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2026-01-18T01:08:40.936406" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-18T01:08:40.936827" level="FAIL">Text 'Robot Framework' did not appear in 10 seconds.</msg>
+<arg>Robot Framework</arg>
+<arg>10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2026-01-18T01:08:30.760448" elapsed="10.292997">Text 'Robot Framework' did not appear in 10 seconds.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2026-01-18T01:08:41.053866" elapsed="0.000081"/>
+</kw>
+<status status="FAIL" start="2026-01-18T01:08:25.964850" elapsed="15.089485">Text 'Robot Framework' did not appear in 10 seconds.</status>
+</test>
+<status status="FAIL" start="2026-01-18T01:08:25.325500" elapsed="15.729846"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="First Test" id="s1" pass="0" fail="1" skip="0">First Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-18T01:08:26.247193" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_143_WINDOWS)</msg>
+</errors>
+</robot>
